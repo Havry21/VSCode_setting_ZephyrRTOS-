@@ -1,0 +1,63 @@
+Language: Cpp
+BasedOnStyle: LLVM
+AccessModifierOffset: -4
+IndentWidth: 4
+TabWidth: 4
+ColumnLimit: 0
+
+AlignConsecutiveAssignments: true
+# AlignConsecutiveBitFields: true
+AlignConsecutiveDeclarations: false
+AlignConsecutiveMacros: true
+AlignEscapedNewlines: Left
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: false
+# AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: InlineOnly # ???
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None
+# BitFieldColonSpacing: Before
+# BracedInitializerIndentWidth: 4
+# EmptyLineBeforeAccessModifier: Always
+# IndentCaseBlocks: false
+IndentCaseLabels: true
+IndentPPDirectives: BeforeHash
+# InsertBraces: true
+# InsertNewlineAtEOF: true
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: All
+PointerAlignment: Right
+# QualifierAlignment: Left
+# ReferenceAlignment: Right
+SpaceAfterCStyleCast: true
+SpaceAfterLogicalNot: true
+SpaceBeforeAssignmentOperators: true
+# SpaceBeforeCaseColon: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: ControlStatements
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpaceInEmptyParentheses: false
+
+# Configure each individual brace in BraceWrapping
+BreakBeforeBraces: Custom
+
+# Control of individual brace wrapping cases
+BraceWrapping: {
+    AfterCaseLabel: 'true'
+    AfterClass: 'true'
+    AfterControlStatement: 'Always'
+    AfterEnum : 'true'
+    AfterFunction : 'true'
+    AfterNamespace : 'true'
+    AfterStruct : 'true'
+    AfterUnion : 'true'
+    AfterExternBlock : 'false'
+    BeforeElse : 'false'
+    # BeforeWhile : 'false'
+    IndentBraces : 'false'  
+}

@@ -1,0 +1,79 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "make",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceRoot}/build",
+			},
+
+			"command": "make",
+			"args": [
+				"-j8"
+			],
+
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+
+			// "presentation": {
+			// 	"reveal": "always",
+			// 	"revealProblems": "onProblem",
+			// 	"close": false
+			// }
+		},
+		{
+			"label": "cmake",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceRoot}/build"
+			},
+
+			"command": "cmake",
+			"args": [
+				"./..",
+
+			],
+
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+
+			// "presentation": {
+			// 	"reveal": "always",
+			// 	"revealProblems": "always",
+			// 	"close": true
+			// }
+		},
+		{
+			"label": "clear",
+			"type": "shell",
+			"options": {
+				"cwd": "${workspaceRoot}/build"
+			},
+
+			"command": "rm",
+			"args": [
+				"-r",
+				"*"
+			],
+
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+
+			// "presentation": {
+			// 	"reveal": "always",
+			// 	"revealProblems": "onProblem",
+			// 	"close": true
+			// }
+		}
+	]
+}

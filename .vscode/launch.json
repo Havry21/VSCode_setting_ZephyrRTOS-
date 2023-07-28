@@ -1,0 +1,32 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version":"0.2.0",
+    "configurations": [
+
+          {
+            "name": "Cortex-Debug (JLink)",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/zephyr/zephyr.elf",
+            "request": "launch",
+            "gdbPath": "/home/dima/zephyr-sdk-0.15.2/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            // "ipAddress": "10.0.117.215",
+            "interface": "swd",
+            "device": "STM32F413ZH",
+            "showDevDebugOutput": "none",
+            "preLaunchCommands": [
+                "set remote hardware-breakpoint-limit 6",
+                "set remote hardware-watchpoint-limit 4",
+                "monitor reset",
+                "load",
+                "monitor reset"
+            ],
+            "preRestartCommands": [
+                "monitor reset 0"
+            ]
+        }
+    ]
+  }
